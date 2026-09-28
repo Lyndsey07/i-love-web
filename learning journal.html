@@ -1,0 +1,136 @@
+/* Webtechnologie, introductie html, css en js (Justus)
+
+HTML (inhoud):
+  Client opent een link in een browser op een device.
+      |                                     ↑
+      |                                     |
+      |                                     |
+      | http.request                        | http.response
+      |                                     |
+      |                                     |
+      ↓                                     |
+    Server -----------------------------> Server
+
+        http = hyper text transfer protocol
+
+      Document
+         |
+   <html></html>
+     |           element
+     |________<head></head>
+     |          |             element
+     |          |________ <title></title>
+     |                       |           text
+     |                       |________"FDND ftw"
+     |           element
+     |________<body></body>
+                |           element
+                |________<main></main>
+                |           |             element
+                |           |________<article></article>
+                |           |            |
+                |           |            |        element
+                |                        |________<p></p>
+                |                        |         |          text
+                |                        |         |________"Hi FDND!"
+                |             element              |
+                |________<footer></footer>         |
+                |           |        
+                |           |        element
+                |           |________<a></a>
+                            |         |         attribute
+                            |         |________   .....
+                                      |
+                                      |
+
+CSS (vormgeving):
+  Selector
+     |
+     p { color: red;
+        |_____| |__|
+       property waarde
+      |_______________|
+          declaratie
+
+JS (gedrag):
+  Select / event / classlist
+
+   object  functie        waarde
+     |        |             |
+     ↓        ↓             ↓
+  document.querySelector("p.intro").addEventListener("mouseover",e)-->{e.target.classList.toggle("classnaam")}
+
+Conclusie:
+  HTML is voor inhoud
+  CSS is voor vormgeving ---------------- vorm, layout, typografie, animatie en interactie
+  JS is voor gedrag  
+
+Devtools
+  Elke website inspecteren, alle HTML en CSS bekijken en aanpassen (tijdelijk, totdat je de pagina ververst)
+*/
+
+
+
+/* Daily check-out
+    2-9-2026
+      1. Het nut van een breakdownschets is dat je van te voren kan bedenken welke html codes je moet gebruiken om de pagina te bouwen die je zojuist geschetst heb, omdat
+         je die rondom je schets schrijft met pijlen en verschillende kleuren.
+      2. Als je een breakdownschets maakt moet je letten op het feit dat een element in een element kan zitten.
+      3. Devtools zijn handig, omdat je zonder dat je de code in html fysiek verandert, dingen toch kan aanpassen om te zien hoe het staat/zal worden. Deze aanpassingen
+         zijn tijdelijk, namelijk totdat je de pagina ververst, dan worden de veranderingen die je hebt gedaan in Devtools gewist.
+    
+    7-9-2026
+      1. 3 dingen die ik heb geleerd zijn:
+        1. Dat begrijpend lezen enorm belangrijk is om ervoor te zorgen dat je niks in de opdracht mist.
+        2. Hoe Figma een beetje werkt
+        3. Hoe je in GitHub kan collaboraten
+      2. 2 dingen die ik interessant vind zijn:
+        1. Leren hoe je meer dingen met HTML kan doen
+        2. Leren wat ik allemaal met CSS kan doen
+      3. 1 ding waar ik nog vragen over heb is 
+    
+    10-9-2026
+      3 dingen die ik heb geleerd zijn:
+        1. Dat je met @media enorm makkelijk kan ervoor zorgen dat de lay-out verandert als het scherm groter of kleiner is dan bepaalde pixelwaarden
+        2. Hoe ik een goede breakdownschets kan maken die ook duidelijk is voor docenten en andere leerlingen
+        3. Beter te communiceren binnen mijn groep
+    
+    11-9-2026
+      - De feedback die ik heb gegeven aan een ander team is dat hun website een beetje saai leek
+      - De feedback die we hebben ontvangen is dat we een ander lettertype moesten gebruiken, omdat het er template-achtig uitzag
+      - Na het weekend wil ik voornamelijk werken aan mijn CSS om ervoor te zorgen dat mijn pagina er overzichtelijk uitziet
+    
+    14-9-2026 
+      - Je kan visuele hiërarchie aanbrengen in je ontwerp door onder andere grootte, kleurcontrast en witruimtes.
+      - De 3 niveaus van visuele hiërarchie is:
+        - De belangrijkste informatie
+         - De belangrijke details
+        - Achtergrondinformatie
+      - Joshua Porter is een Amerikaanse auteur, pastoor en oud-muzikant. Zijn quote was “…you use hierarchy to tell a story, to provide
+        context that culminates in the action being taken.” Wat hij bedoelt met deze quote is dat je hiërarchie nodig hebt om context te geven
+        aan de mensen die je website bekijken zodat het ervoor zorgt dat ze een bepaalde actie gaan nemen.
+        Bron: https://principles.design/examples/principles-of-user-interface-design
+    
+    16-9-2026
+      3 dingen die ik heb geleerd zijn:
+        1. Hoe ik bepaalde dingen in een grid kan positioneren
+        2. Dat om hulp vragen niet erg is en juist goed
+        3. Dat ik meer weet dan dat ik dacht dat ik wist
+    
+    21-9-2026
+      3 dingen die ik vandaag heb geleerd over het briefing-debriefing proces zijn:
+        1. Dat het essentieel is voor een goede samenwerking
+        2. Hoe je een briefing kan voorbereiden
+        3. Hoe je een debriefing kan schrijven
+      
+      2 leervragen wat ik deze sprint wil leren zijn:
+        1. 
+        2. 
+    
+    28-9-2026
+      - De default layout mode van elk element is flow layout.
+      - Het verschil tussen flexbox layout en grid layout is dat flexbox je kan gebruiken als je alleen rijen of columns moet organiseren
+        en met grid kan je beide tegelijkertijd organiseren.
+      - De layout modes die ik al beheers zijn flow, grid en flexbox. De modes die ik nog moet leren is positioned, float, multi-column
+        en table.
+*/
